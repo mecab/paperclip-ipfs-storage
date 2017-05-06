@@ -17,8 +17,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "paperclip-ipfs-storage"
   gem.homepage = "http://github.com/mecab/paperclip-ipfs-storage"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{The paperclip storage library to save files on IPFS network.}
+  gem.description = %Q{The paperclip storage library to save files on IPFS network.}
   gem.email = "mecab@misosi.ru"
   gem.authors = ["mecab"]
   # dependencies defined in Gemfile
