@@ -15,7 +15,20 @@ or put it on the Gemfile.
 Usage
 =====
 
-Specify `:ipfs` for the `:storage` option and `':gateway_url'` for the `:url`. For example:
+Add `attachment` type field into the schema as usual, then add `string` type field as `[field_name]_ipfs_hash`. For example:
+
+```ruby
+class CreateMediaAttachments < ActiveRecord::Migration[5.0]
+  def change
+    create_table :media_attachments do |t|
+      t.attachment :file
+      t.string :file_ipfs_hash, :file_ipfs_hash, null: true, default: nil
+    end
+  end
+end
+```
+
+Then specify `:ipfs` for the `:storage` option and `':gateway_url'` for the `:url` in the model. For example:
 
 ```ruby
 class MediaAttachment < ActiveRecord::Base
