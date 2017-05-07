@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = Gem::Requirement.new(">= 0".freeze) if s.respond_to? :required_rubygems_version=
   s.require_paths = ["lib".freeze]
   s.authors = ["mecab".freeze]
-  s.date = "2017-05-06"
+  s.date = "2017-05-07"
   s.description = "The paperclip storage library to save files on IPFS network.".freeze
   s.email = "mecab@misosi.ru".freeze
   s.extra_rdoc_files = [
@@ -28,6 +28,7 @@ Gem::Specification.new do |s|
     "VERSION",
     "lib/paperclip-ipfs-storage.rb",
     "lib/paperclip/storage/ipfs.rb",
+    "paperclip-ipfs-storage.gemspec",
     "test/helper.rb",
     "test/test_paperclip-ipfs-storage.rb"
   ]
